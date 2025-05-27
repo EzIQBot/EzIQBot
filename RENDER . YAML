@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: eziqbot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    plan: free
+    branch: main
+    autoDeploy: true
